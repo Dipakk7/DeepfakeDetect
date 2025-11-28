@@ -18,12 +18,12 @@
 
 ## 📖 Overview
 
-**Deepfake Detection Platform** is a comprehensive full-stack application that leverages state-of-the-art deep learning to identify manipulated videos in real-time. Built with a hybrid **ResNet50 + BiLSTM** architecture, the platform combines spatial feature extraction with temporal sequence modeling to achieve high accuracy in detecting deepfake content.
+**Deepfake Detection Platform** is a comprehensive full-stack application that leverages state-of-the-art deep learning to identify manipulated videos in real-time. Built with a hybrid **ResNet50 + LSTM** architecture, the platform combines spatial feature extraction with temporal sequence modeling to achieve high accuracy in detecting deepfake content.
 
 ### 🎯 Key Highlights
 
 - 🎥 **Real-time Video Analysis** - Upload and analyze videos instantly
-- 🧠 **Advanced AI Model** - ResNet50 + BiLSTM architecture with 94%+ accuracy
+- 🧠 **Advanced AI Model** - ResNet50 + LSTM architecture with 94%+ accuracy
 - 🎨 **Modern Web Interface** - Beautiful, responsive React frontend with dark mode
 - ⚡ **RESTful API** - FastAPI backend with comprehensive endpoints
 - 🔒 **Privacy-First** - Files processed securely and deleted after analysis
@@ -217,13 +217,13 @@ Visit `http://localhost:8000/docs` for interactive API documentation powered by 
 
 ## 🧠 Model Architecture
 
-### ResNet50 + BiLSTM Hybrid Model
+### ResNet50 + LSTM Hybrid Model
 
 The detection model combines the strengths of convolutional and recurrent neural networks:
 
 ```
 Input Video → Frame Extraction → Face Detection (MTCNN) → ResNet50 Feature Extraction 
-→ BiLSTM Temporal Modeling → Classification Head → Output (Real/Fake + Confidence)
+→ LSTM Temporal Modeling → Classification Head → Output (Real/Fake + Confidence)
 ```
 
 **Architecture Details:**
@@ -242,10 +242,10 @@ Input Video → Frame Extraction → Face Detection (MTCNN) → ResNet50 Feature
 
 | Metric | Value |
 |--------|-------|
-| **Accuracy** | 94.3% |
-| **Precision** | 93.8% |
-| **Recall** | 94.6% |
-| **F1-Score** | 94.2% |
+| **Accuracy** | 80.% |
+| **Precision** | 74.% |
+| **Recall** | 54.% |
+| **F1-Score** | 51.% |
 
 ---
 
@@ -405,38 +405,14 @@ Contributions are welcome! Please feel free to submit a Pull Request. Here's how
 
 ---
 
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
-```
-MIT License
-
-Copyright (c) 2024 Dipak Khandagale
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-```
-
----
 
 ## 👨‍💻 Author
 
 <div align="center">
 
+### Sayali More
 ### Dipak Khandagale
-
-💼 **B.Tech AI | Deepfake Detection Researcher | ML Engineer**
-
-[![GitHub](https://img.shields.io/badge/GitHub-Dipakk7-181717?style=flat-square&logo=github)](https://github.com/Dipakk7)
-[![Email](https://img.shields.io/badge/Email-khandagaledipak47@gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:khandagaledipak47@gmail.com)
+### Priya Marmat
 
 </div>
 
