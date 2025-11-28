@@ -23,7 +23,7 @@
 ### 🎯 Key Highlights
 
 - 🎥 **Real-time Video Analysis** - Upload and analyze videos instantly
-- 🧠 **Advanced AI Model** - ResNet50 + LSTM architecture with 94%+ accuracy
+- 🧠 **Advanced AI Model** - ResNet50 + LSTM architecture with 80%+ accuracy
 - 🎨 **Modern Web Interface** - Beautiful, responsive React frontend with dark mode
 - ⚡ **RESTful API** - FastAPI backend with comprehensive endpoints
 - 🔒 **Privacy-First** - Files processed securely and deleted after analysis
@@ -370,18 +370,6 @@ Contributions are welcome! Please feel free to submit a Pull Request. Here's how
 - Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 - Push to the branch (`git push origin feature/AmazingFeature`)
 - Open a Pull Request
-
----
-
-## 📸 Screenshots
-
-> 📷 *Screenshots will be added soon. Stay tuned!*
-
-<!-- Add screenshots here when available:
-![Landing Page](screenshots/landing.png)
-![Upload Page](screenshots/upload.png)
-![Results Page](screenshots/results.png)
--->
 
 ---
 
