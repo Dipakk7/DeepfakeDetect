@@ -381,19 +381,6 @@ Contributions are welcome! Please feel free to submit a Pull Request. Here's how
 
 ---
 
-## 🔮 Future Enhancements
-
-- [ ] Real-time video stream analysis
-- [ ] Image deepfake detection
-- [ ] Model explainability features
-- [ ] User authentication and history
-- [ ] API rate limiting and usage analytics
-- [ ] Docker containerization
-- [ ] CI/CD pipeline setup
-
----
-
-
 ## 👨‍💻 Author
 
 <div align="center">
