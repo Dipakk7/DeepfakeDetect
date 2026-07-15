@@ -297,11 +297,11 @@ Distributed under the MIT License. See [LICENSE](LICENSE) for details.
 
 ## 👨‍💻 Contributors
 
-**Dipak** [![Mail](https://img.shields.io/badge/-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:khandagaledipak47@gmail.com)
+**Dipak Khandagale** [![Mail](https://img.shields.io/badge/-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:khandagaledipak47@gmail.com)
 
-**Sayali** [![Mail](https://img.shields.io/badge/-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:Sayalimore2003@gmail.com)
+**Sayali More** [![Mail](https://img.shields.io/badge/-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:Sayalimore2003@gmail.com)
 
-**Priya** [![Mail](https://img.shields.io/badge/-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:priyamarmt@gmail.com)
+**Priya Marmat** [![Mail](https://img.shields.io/badge/-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:priyamarmt@gmail.com)
 
 <br/>
 
