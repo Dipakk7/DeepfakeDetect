@@ -25,13 +25,6 @@
 <a href="#%EF%B8%8F-installation--setup"><img src="https://img.shields.io/badge/Setup-black?style=flat-square&logo=gitbook&logoColor=white" /></a>
 <a href="#-api-endpoints"><img src="https://img.shields.io/badge/API-black?style=flat-square&logo=fastapi&logoColor=white" /></a>
 
-<br/><br/>
-
-<img src="https://img.shields.io/github/last-commit/Dipakk7/DeepfakeDetect?style=flat-square&color=6366f1&label=last%20commit" />
-<img src="https://img.shields.io/github/languages/top/Dipakk7/DeepfakeDetect?style=flat-square&color=EE4C2C" />
-<img src="https://komarev.com/ghpvc/?username=Dipakk7&repo=DeepfakeDetect&style=flat-square&color=blue&label=repo+views" />
-<img src="https://img.shields.io/badge/status-actively%20developed-brightgreen?style=flat-square" />
-
 </div>
 
 <br/>
