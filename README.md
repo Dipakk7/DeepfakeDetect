@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=220&section=header&text=DeepfakeDetect&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI-Powered%20Manipulated%20Video%20Detection&descAlignY=58&descSize=20" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a1a,100:4a4a4a&height=220&section=header&text=DeepfakeDetect&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI-Powered%20Manipulated%20Video%20Detection&descAlignY=58&descSize=20" width="100%"/>
 
 <br/>
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=800&color=EE4C2C&center=true&vCenter=true&width=680&lines=Detect+deepfakes+with+ResNet50+%2B+LSTM;Upload+a+video%2C+get+a+verdict+in+seconds;Face-level+analysis+with+confidence+scoring;Full-stack%3A+FastAPI+backend+%2B+React+frontend" alt="Typing SVG" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=800&color=555555&center=true&vCenter=true&width=680&lines=Detect+deepfakes+with+ResNet50+%2B+LSTM;Upload+a+video%2C+get+a+verdict+in+seconds;Face-level+analysis+with+confidence+scoring;Full-stack%3A+FastAPI+backend+%2B+React+frontend" alt="Typing SVG" />
 
 <br/><br/>
 
@@ -14,7 +14,7 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![React](https://img.shields.io/badge/React_18-black?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=3&width=1000" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1a1a1a,100:4a4a4a&height=3&width=1000" width="100%"/>
 
 <br/>
 
@@ -46,7 +46,7 @@
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2&width=1000" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1a1a1a,100:4a4a4a&height=2&width=1000" width="100%"/>
 
 ## 🚀 Key Features
 
@@ -85,7 +85,7 @@ Works across desktop, tablet, and mobile out of the box.
 </tr>
 </table>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2&width=1000" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1a1a1a,100:4a4a4a&height=2&width=1000" width="100%"/>
 
 ## 🛠️ Technology Stack
 
@@ -106,7 +106,7 @@ Works across desktop, tablet, and mobile out of the box.
 | **Data Viz** | Recharts | Confidence meters and result visualizations |
 | **File Upload** | React Dropzone | Drag-and-drop video upload handling |
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2&width=1000" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1a1a1a,100:4a4a4a&height=2&width=1000" width="100%"/>
 
 ## 🧠 Model Architecture
 
@@ -137,7 +137,7 @@ Input Video → Frame Extraction → Face Detection (MTCNN) → ResNet50 Feature
 | **Recall** | 54% |
 | **F1-Score** | 51% |
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2&width=1000" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1a1a1a,100:4a4a4a&height=2&width=1000" width="100%"/>
 
 ## 📂 Project Structure
 
@@ -155,7 +155,7 @@ DeepfakeDetect/
 └── model_epoch_30.pth         # Pretrained model weights (downloaded separately)
 ```
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2&width=1000" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1a1a1a,100:4a4a4a&height=2&width=1000" width="100%"/>
 
 ## ⚙️ Installation & Setup
 
@@ -243,7 +243,7 @@ npm start
 
 </details>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2&width=1000" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1a1a1a,100:4a4a4a&height=2&width=1000" width="100%"/>
 
 ## 📡 API Endpoints
 
@@ -276,7 +276,7 @@ curl -X POST "http://localhost:8000/predict" \
 }
 ```
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2&width=1000" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1a1a1a,100:4a4a4a&height=2&width=1000" width="100%"/>
 
 ## 📊 Dataset
 
@@ -285,7 +285,7 @@ Trained on the **Deepfake Detection Challenge (DFDC)** dataset, released by Meta
 - [Kaggle Competition Page](https://www.kaggle.com/competitions/deepfake-detection-challenge/data)
 - CLI: `kaggle competitions download -c deepfake-detection-challenge`
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2&width=1000" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1a1a1a,100:4a4a4a&height=2&width=1000" width="100%"/>
 
 ## 📄 License
 
@@ -297,11 +297,11 @@ Distributed under the MIT License. See [LICENSE](LICENSE) for details.
 
 ## 👨‍💻 Contributors
 
-#### Dipak Khandagale &nbsp;[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:khandagaledipak47@gmail.com)
+#### Dipak Khandagale &nbsp;[![Email](https://img.shields.io/badge/Email-2d2d2d?style=flat-square&logo=gmail&logoColor=white)](mailto:khandagaledipak47@gmail.com)
 
-#### Sayali More &nbsp;[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:Sayalimore2003@gmail.com)
+#### Sayali More &nbsp;[![Email](https://img.shields.io/badge/Email-2d2d2d?style=flat-square&logo=gmail&logoColor=white)](mailto:Sayalimore2003@gmail.com)
 
-#### Priya Marmat &nbsp;[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:priyamarmt@gmail.com)
+#### Priya Marmat &nbsp;[![Email](https://img.shields.io/badge/Email-2d2d2d?style=flat-square&logo=gmail&logoColor=white)](mailto:priyamarmt@gmail.com)
 
 <br/>
 
@@ -317,6 +317,6 @@ Distributed under the MIT License. See [LICENSE](LICENSE) for details.
   <img src="https://img.shields.io/badge/⬆-Back%20to%20Top-black?style=for-the-badge" />
 </a>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a1a,100:4a4a4a&height=100&section=footer" width="100%"/>
 
 </div>
