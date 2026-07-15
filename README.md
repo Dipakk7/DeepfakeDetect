@@ -297,7 +297,9 @@ Distributed under the MIT License. See [LICENSE](LICENSE) for details.
 
 ## 👨‍💻 Contributors
 
-**Dipak Khandagale** · **Sayali More** · **Priya Marmat**
+[![Dipak Khandagale](https://img.shields.io/badge/Dipak%20Khandagale-khandagaledipak47%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:khandagaledipak47@gmail.com)
+[![Sayali More](https://img.shields.io/badge/Sayali%20More-Sayalimore2003%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:Sayalimore2003@gmail.com)
+[![Priya Marmat](https://img.shields.io/badge/Priya%20Marmat-priyamarmt%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:priyamarmt@gmail.com)
 
 [![GitHub](https://img.shields.io/badge/GitHub-Dipakk7-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Dipakk7)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Dipak%20Khandagale-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dipakkhandagale/)
