@@ -294,16 +294,6 @@ Trained on the **Deepfake Detection Challenge (DFDC)** dataset, released by Meta
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2&width=1000" width="100%"/>
 
-## 📸 Screenshots
-
-| Feature | Preview |
-|:--|:--:|
-| Landing Page | *coming soon* |
-| Upload & Analysis | *coming soon* |
-| Results Dashboard | *coming soon* |
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2&width=1000" width="100%"/>
-
 ## 📄 License
 
 Distributed under the MIT License. See [LICENSE](LICENSE) for details.
