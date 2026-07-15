@@ -1,178 +1,277 @@
 <div align="center">
 
-# 🧠 Deepfake Detection Platform
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=220&section=header&text=DeepfakeDetect&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI-Powered%20Manipulated%20Video%20Detection&descAlignY=58&descSize=20" width="100%"/>
 
-### A Full-Stack AI-Powered Solution for Detecting Manipulated Videos
+<br/>
 
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=800&color=EE4C2C&center=true&vCenter=true&width=680&lines=Detect+deepfakes+with+ResNet50+%2B+LSTM;Upload+a+video%2C+get+a+verdict+in+seconds;Face-level+analysis+with+confidence+scoring;Full-stack%3A+FastAPI+backend+%2B+React+frontend" alt="Typing SVG" />
+
+<br/><br/>
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![React](https://img.shields.io/badge/React-18.2-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![React](https://img.shields.io/badge/React_18-black?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 
-[Features](#-features) • [Installation](#-installation--setup) • [Usage](#-usage) • [API Documentation](#-api-endpoints) • [Model Details](#-model-architecture)
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=3&width=1000" width="100%"/>
+
+<br/>
+
+<a href="#-overview"><img src="https://img.shields.io/badge/Overview-black?style=flat-square&logo=googledocs&logoColor=white" /></a>
+<a href="#-key-features"><img src="https://img.shields.io/badge/Features-black?style=flat-square&logo=sparkfun&logoColor=white" /></a>
+<a href="#%EF%B8%8F-technology-stack"><img src="https://img.shields.io/badge/Tech%20Stack-black?style=flat-square&logo=techcrunch&logoColor=white" /></a>
+<a href="#-model-architecture"><img src="https://img.shields.io/badge/Model-black?style=flat-square&logo=pytorch&logoColor=white" /></a>
+<a href="#%EF%B8%8F-installation--setup"><img src="https://img.shields.io/badge/Setup-black?style=flat-square&logo=gitbook&logoColor=white" /></a>
+<a href="#-api-endpoints"><img src="https://img.shields.io/badge/API-black?style=flat-square&logo=fastapi&logoColor=white" /></a>
+
+<br/><br/>
+
+<img src="https://img.shields.io/github/last-commit/Dipakk7/DeepfakeDetect?style=flat-square&color=6366f1&label=last%20commit" />
+<img src="https://img.shields.io/github/languages/top/Dipakk7/DeepfakeDetect?style=flat-square&color=EE4C2C" />
+<img src="https://komarev.com/ghpvc/?username=Dipakk7&repo=DeepfakeDetect&style=flat-square&color=blue&label=repo+views" />
+<img src="https://img.shields.io/badge/status-actively%20developed-brightgreen?style=flat-square" />
 
 </div>
 
----
+<br/>
 
-## 📖 Overview
+## 📌 Overview
 
-**Deepfake Detection Platform** is a comprehensive full-stack application that leverages state-of-the-art deep learning to identify manipulated videos in real-time. Built with a hybrid **ResNet50 + LSTM** architecture, the platform combines spatial feature extraction with temporal sequence modeling to achieve high accuracy in detecting deepfake content.
+> **DeepfakeDetect** is a full-stack application that detects manipulated ("deepfake") videos using a hybrid **ResNet50 + LSTM** deep learning pipeline. Faces are extracted frame-by-frame with MTCNN, passed through a pretrained ResNet50 for spatial feature extraction, then fed into a bidirectional LSTM to model temporal inconsistencies across frames — the kind of subtle motion artifacts that give deepfakes away.
+>
+> The model is served through a FastAPI backend with a documented REST API, and consumed by a polished React frontend where a user can drag-and-drop a video and get a real/fake verdict with a confidence score in seconds.
 
-### 🎯 Key Highlights
+<div align="center">
 
-- 🎥 **Real-time Video Analysis** - Upload and analyze videos instantly
-- 🧠 **Advanced AI Model** - ResNet50 + LSTM architecture with 80%+ accuracy
-- 🎨 **Modern Web Interface** - Beautiful, responsive React frontend with dark mode
-- ⚡ **RESTful API** - FastAPI backend with comprehensive endpoints
-- 🔒 **Privacy-First** - Files processed securely and deleted after analysis
-- 📊 **Detailed Analytics** - Confidence scores and visual feedback
+| | |
+|:---:|:---|
+| 🎥 | **Real-time inference** — upload a video, get a verdict in ~3–5 seconds |
+| 🧠 | **Hybrid architecture** — ResNet50 spatial features + BiLSTM temporal modeling |
+| 🔒 | **Privacy-conscious** — uploaded files are processed and discarded, not retained |
+| ⚡ | **Full-stack delivery** — FastAPI REST API + React UI with dark mode & live charts |
 
----
+</div>
 
-## ✨ Features
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2&width=1000" width="100%"/>
 
-### 🖥️ Frontend (React Web Application)
-- 🎨 **Modern UI/UX** - Built with Tailwind CSS and Framer Motion animations
-- 🌙 **Dark Mode** - Comfortable viewing in any lighting condition
-- 📤 **Drag & Drop Upload** - Intuitive file upload with progress tracking
-- 📈 **Visual Results** - Interactive confidence meters and analytics charts
-- 📱 **Responsive Design** - Works seamlessly on desktop, tablet, and mobile
-- 📚 **Help & Documentation** - Comprehensive guides and FAQ sections
-- 🎭 **Smooth Animations** - Polished user experience with Framer Motion
+## 🚀 Key Features
 
-### ⚙️ Backend (FastAPI REST API)
-- 🎥 **Video Processing** - Supports multiple formats (MP4, AVI, MKV, MOV, WEBM)
-- 🧩 **Face Detection** - MTCNN-based face extraction before analysis
-- ⚡ **High Performance** - Optimized inference pipeline with GPU support
-- 📊 **Confidence Scoring** - Sigmoid-based probability outputs
-- 🔄 **Batch Processing** - Analyze multiple videos simultaneously
-- 📡 **RESTful Endpoints** - Well-documented API with OpenAPI/Swagger docs
-- 🏥 **Health Monitoring** - System health and model status endpoints
+<table>
+<tr>
+<td width="50%" valign="top">
 
----
+### 🎥 Video Upload & Analysis
+Drag-and-drop or click-to-browse upload, with support for MP4, AVI, MKV, MOV, and WEBM.
 
-## 🛠️ Tech Stack
+### 🧩 Face-Level Detection
+MTCNN-based face detection and alignment run before classification, so the model reasons over faces rather than raw frames.
 
-### Backend Technologies
-| Component | Technology | Purpose |
-|-----------|-----------|---------|
-| **Deep Learning** | PyTorch, TorchVision | Model architecture and inference |
-| **API Framework** | FastAPI, Uvicorn | REST API server |
-| **Video Processing** | OpenCV, Pillow | Video frame extraction and preprocessing |
-| **Face Detection** | facenet-pytorch (MTCNN) | Face detection and alignment |
-| **Language** | Python 3.10+ | Backend development |
+### 📊 Confidence Scoring
+Sigmoid-based probability output gives a calibrated confidence score alongside the real/fake label — not just a binary guess.
 
-### Frontend Technologies
-| Component | Technology | Purpose |
-|-----------|-----------|---------|
-| **Framework** | React 18.2 | UI framework |
-| **Styling** | Tailwind CSS | Utility-first CSS framework |
-| **Routing** | React Router DOM | Client-side routing |
-| **Animations** | Framer Motion | Smooth UI animations |
-| **Icons** | Lucide React | Icon library |
-| **Charts** | Recharts | Data visualization |
-| **File Upload** | React Dropzone | Drag-and-drop file handling |
+### 🔄 Batch Processing
+Analyze multiple videos in a single request via the `/predict/batch` endpoint.
 
----
+</td>
+<td width="50%" valign="top">
 
-## 📦 Installation & Setup
+### 🎨 Modern React UI
+Tailwind CSS + Framer Motion for a smooth, responsive interface with dark mode support.
 
-### Prerequisites
-- Python 3.10 or higher
-- Node.js 16+ and npm
+### 📈 Visual Results
+Interactive confidence meters and analytics charts (Recharts) on the results page.
+
+### 📡 Documented REST API
+FastAPI backend with interactive Swagger docs at `/docs`, plus a health-check endpoint for monitoring.
+
+### 📱 Responsive Design
+Works across desktop, tablet, and mobile out of the box.
+
+</td>
+</tr>
+</table>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2&width=1000" width="100%"/>
+
+## 🛠️ Technology Stack
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=python,pytorch,fastapi,react,tailwind,opencv" />
+
+</div>
+
+| Layer | Technology | Purpose |
+|:--|:--|:--|
+| **Deep Learning** | PyTorch, TorchVision | Model architecture, training, and inference |
+| **Face Detection** | facenet-pytorch (MTCNN) | Face detection and alignment prior to classification |
+| **Video Processing** | OpenCV, Pillow | Frame extraction and preprocessing |
+| **Backend** | FastAPI, Uvicorn, Python 3.10+ | REST API server and async inference pipeline |
+| **Frontend** | React 18.2, React Router DOM | UI framework and client-side routing |
+| **Styling & Animation** | Tailwind CSS, Framer Motion, Lucide React | Utility-first styling, transitions, and icons |
+| **Data Viz** | Recharts | Confidence meters and result visualizations |
+| **File Upload** | React Dropzone | Drag-and-drop video upload handling |
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2&width=1000" width="100%"/>
+
+## 🧠 Model Architecture
+
+### ResNet50 + LSTM Hybrid
+
+```
+Input Video → Frame Extraction → Face Detection (MTCNN) → ResNet50 Feature Extraction
+→ Bidirectional LSTM (Temporal Modeling) → Classification Head → Real / Fake + Confidence
+```
+
+| Detail | Value |
+|:--|:--|
+| **Spatial extractor** | ResNet50, pretrained on ImageNet |
+| **Temporal model** | Bidirectional LSTM, 256 hidden units |
+| **Input** | 12 frames per video, 224×224 resolution |
+| **Output** | Binary classification with confidence score |
+| **Training dataset** | Deepfake Detection Challenge (DFDC) — Meta |
+| **Class imbalance handling** | Weighted loss + oversampling |
+| **Optimizer** | Adam, with learning rate scheduling |
+| **Validation** | 5-fold cross-validation |
+
+### 📊 Performance Metrics
+
+| Metric | Value |
+|:--|:--:|
+| **Accuracy** | 80% |
+| **Precision** | 74% |
+| **Recall** | 54% |
+| **F1-Score** | 51% |
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2&width=1000" width="100%"/>
+
+## 📂 Project Structure
+
+```
+DeepfakeDetect/
+├── backend.py                 # FastAPI backend server
+├── requirements.txt           # Python dependencies
+├── package.json               # Node.js dependencies
+├── src/                       # React frontend source
+│   ├── components/            # Reusable UI components
+│   ├── pages/                 # Landing, Upload, Results, About, Help pages
+│   └── context/                # Dark mode context provider
+├── public/                    # Static assets
+├── Backend/                   # Additional backend files
+└── model_epoch_30.pth         # Pretrained model weights (downloaded separately)
+```
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2&width=1000" width="100%"/>
+
+## ⚙️ Installation & Setup
+
+<details open>
+<summary><b>Prerequisites</b></summary>
+<br/>
+
+- Python 3.10+
+- Node.js 16+ & npm
 - CUDA-capable GPU (optional, for faster inference)
 
-### Step 1: Clone the Repository
+</details>
+
+<details open>
+<summary><b>1. Clone the repository</b></summary>
+<br/>
+
 ```bash
 git clone https://github.com/Dipakk7/DeepfakeDetect.git
 cd DeepfakeDetect
 ```
 
-### Step 2: Backend Setup
+</details>
 
-Create and activate a virtual environment:
+<details>
+<summary><b>2. Backend setup</b></summary>
+<br/>
+
 ```bash
-# Windows
 python -m venv venv
-venv\Scripts\activate
-
-# Linux/Mac
-python -m venv venv
-source venv/bin/activate
-```
-
-Install Python dependencies:
-```bash
+source venv/bin/activate      # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### Step 3: Frontend Setup
+</details>
 
-Install Node.js dependencies:
+<details>
+<summary><b>3. Frontend setup</b></summary>
+<br/>
+
 ```bash
 npm install
 ```
 
-### Step 4: Download Model Weights
+</details>
 
-The pretrained model weights are required for inference. Download them from:
+<details>
+<summary><b>4. Download model weights</b></summary>
+<br/>
 
-👉 **[Google Drive Link](https://drive.google.com/file/d/1ZSp7lvbaQhoN51nsaO8Oi0WA1cMFYnb6/view?usp=sharing)**
+Pretrained weights aren't tracked in-repo due to file size limits.
 
-Or use command line:
+👉 **[Download from Google Drive](https://drive.google.com/file/d/1ZSp7lvbaQhoN51nsaO8Oi0WA1cMFYnb6/view?usp=sharing)**
+
+Or via CLI:
+
 ```bash
 pip install gdown
 gdown 1ZSp7lvbaQhoN51nsaO8Oi0WA1cMFYnb6 -O model_epoch_30.pth
 ```
 
-Set the model path (optional, defaults to `model_epoch_30.pth`):
-```bash
-# Windows
-set MODEL_PATH=model_epoch_30.pth
+</details>
 
-# Linux/Mac
-export MODEL_PATH=model_epoch_30.pth
-```
+<details open>
+<summary><b>5. Run locally</b></summary>
+<br/>
 
-### Step 5: Run the Application
+**Terminal 1 — Backend:**
 
-**Terminal 1 - Start Backend Server:**
 ```bash
 python backend.py
 ```
-✅ Backend API running at `http://localhost:8000`
 
-**Terminal 2 - Start Frontend Development Server:**
+✅ Runs at `http://localhost:8000`
+
+**Terminal 2 — Frontend:**
+
 ```bash
 npm start
 ```
-✅ Frontend app running at `http://localhost:3000`
 
-> 💡 **Tip:** Make sure both servers are running simultaneously. The frontend is configured to proxy API requests to the backend.
+✅ Runs at `http://localhost:3000`
 
----
+> 💡 Both servers need to run simultaneously — the frontend proxies API requests to the backend.
 
-## 🚀 Usage
+</details>
 
-### Web Interface
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2&width=1000" width="100%"/>
 
-1. Navigate to `http://localhost:3000` in your browser
-2. Click **"Analyze Now"** or go to the Upload page
-3. Drag and drop a video file or click to browse
-4. Wait for the analysis to complete (typically 3-5 seconds)
-5. View detailed results with confidence scores and visualizations
+## 📡 API Endpoints
 
-### API Usage
+| Method | Endpoint | Description |
+|:--|:--|:--|
+| `GET` | `/` | Basic health check |
+| `GET` | `/health` | Detailed system + model status |
+| `POST` | `/predict` | Single video prediction |
+| `POST` | `/predict/batch` | Batch video analysis |
+| `GET` | `/info` | Model architecture & config details |
+| `GET` | `/docs` | Interactive Swagger UI |
 
-#### Single Video Prediction
+**Example request:**
+
 ```bash
 curl -X POST "http://localhost:8000/predict" \
   -F "file=@path/to/your/video.mp4"
 ```
 
-**Response:**
+**Example response:**
+
 ```json
 {
   "video_name": "video.mp4",
@@ -184,231 +283,55 @@ curl -X POST "http://localhost:8000/predict" \
 }
 ```
 
-#### Batch Prediction
-```bash
-curl -X POST "http://localhost:8000/predict/batch" \
-  -F "files=@video1.mp4" \
-  -F "files=@video2.mp4"
-```
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2&width=1000" width="100%"/>
 
-#### Health Check
-```bash
-curl http://localhost:8000/health
-```
+## 📊 Dataset
 
----
+Trained on the **Deepfake Detection Challenge (DFDC)** dataset, released by Meta — thousands of real and manipulated videos spanning diverse generation techniques, qualities, and real-world conditions.
 
-## 📡 API Endpoints
+- [Kaggle Competition Page](https://www.kaggle.com/competitions/deepfake-detection-challenge/data)
+- CLI: `kaggle competitions download -c deepfake-detection-challenge`
 
-| Method | Endpoint | Description | Response |
-|--------|----------|-------------|----------|
-| `GET` | `/` | Basic health check | Status and device info |
-| `GET` | `/health` | Detailed system health | Model status and configuration |
-| `POST` | `/predict` | Single video prediction | Prediction results with confidence |
-| `POST` | `/predict/batch` | Batch video analysis | Array of prediction results |
-| `GET` | `/info` | Model information | Architecture and configuration details |
-| `GET` | `/docs` | API documentation | Interactive Swagger UI |
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2&width=1000" width="100%"/>
 
-### Interactive API Documentation
+## 📸 Screenshots
 
-Visit `http://localhost:8000/docs` for interactive API documentation powered by Swagger UI.
+| Feature | Preview |
+|:--|:--:|
+| Landing Page | *coming soon* |
+| Upload & Analysis | *coming soon* |
+| Results Dashboard | *coming soon* |
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2&width=1000" width="100%"/>
 
-## 🧠 Model Architecture
+## 📄 License
 
-### ResNet50 + LSTM Hybrid Model
+Distributed under the MIT License. See [LICENSE](LICENSE) for details.
 
-The detection model combines the strengths of convolutional and recurrent neural networks:
-
-```
-Input Video → Frame Extraction → Face Detection (MTCNN) → ResNet50 Feature Extraction 
-→ LSTM Temporal Modeling → Classification Head → Output (Real/Fake + Confidence)
-```
-
-**Architecture Details:**
-- **Spatial Feature Extractor**: ResNet50 (pretrained on ImageNet)
-- **Temporal Model**: Bidirectional LSTM (256 hidden units)
-- **Input**: 12 frames per video, 224×224 resolution
-- **Output**: Binary classification (Real/Fake) with confidence score
-
-### Training Details
-- **Dataset**: Deepfake Detection Challenge (DFDC) by Meta
-- **Training Strategy**: Class-imbalance handling (weighted loss + oversampling)
-- **Optimization**: Adam optimizer with learning rate scheduling
-- **Validation**: 5-fold cross-validation
-
-### Performance Metrics
-
-| Metric | Value |
-|--------|-------|
-| **Accuracy** | 80.% |
-| **Precision** | 74.% |
-| **Recall** | 54.% |
-| **F1-Score** | 51.% |
-
----
-
-## 📂 Project Structure
-
-```
-DeepfakeDetect/
-├── backend.py                 # FastAPI backend server
-├── requirements.txt           # Python dependencies
-├── package.json              # Node.js dependencies
-├── .gitignore                # Git ignore rules
-│
-├── src/                      # React frontend source
-│   ├── components/          # Reusable UI components
-│   │   ├── Button.js
-│   │   ├── Card.js
-│   │   ├── FileUpload.js
-│   │   ├── VideoPlayer.js
-│   │   └── ...
-│   ├── pages/               # Page components
-│   │   ├── LandingPage.js
-│   │   ├── UploadPage.js
-│   │   ├── ResultsPage.js
-│   │   ├── AboutPage.js
-│   │   └── HelpPage.js
-│   ├── context/             # React context providers
-│   │   └── DarkModeContext.js
-│   ├── App.js              # Main app component
-│   └── index.js            # Entry point
-│
-├── public/                  # Static assets
-│   ├── index.html
-│   └── images/
-│
-├── Backend/                 # Additional backend files
-│   └── ...
-│
-└── model_epoch_30.pth      # Pretrained model weights (download separately)
-```
-
----
-
-## ⚙️ Configuration
-
-### Environment Variables
-
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `MODEL_PATH` | Path to model weights file | `model_epoch_30.pth` |
-| `PREDICTION_THRESHOLD` | Classification threshold (0-1) | `0.5` |
-| `HOST` | Backend server host | `0.0.0.0` |
-| `PORT` | Backend server port | `8000` |
-
-### Example Configuration
-```bash
-# Windows
-set MODEL_PATH=model_epoch_30.pth
-set PREDICTION_THRESHOLD=0.5
-set PORT=8000
-
-# Linux/Mac
-export MODEL_PATH=model_epoch_30.pth
-export PREDICTION_THRESHOLD=0.5
-export PORT=8000
-```
-
----
-
-## 📊 Dataset Information
-
-The model was trained on the **Deepfake Detection Challenge (DFDC)** dataset, released by Meta (Facebook) and partners. This dataset contains:
-
-- Thousands of real and manipulated videos
-- Diverse deepfake generation techniques
-- Various video qualities and resolutions
-- Real-world scenarios and conditions
-
-**Dataset Access:**
-- [Kaggle Competition](https://www.kaggle.com/competitions/deepfake-detection-challenge/data)
-- Download using Kaggle API: `kaggle competitions download -c deepfake-detection-challenge`
-
----
-
-## 🧪 Development
-
-### Running Tests
-```bash
-# Backend tests (if available)
-python -m pytest tests/
-
-# Frontend tests
-npm test
-```
-
-### Building for Production
-
-**Frontend:**
-```bash
-npm run build
-```
-
-**Backend:**
-The FastAPI server can be deployed using:
-- Docker
-- Gunicorn with Uvicorn workers
-- Cloud platforms (AWS, GCP, Azure)
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request. Here's how you can help:
-
-1. 🐛 **Report Bugs** - Open an issue describing the bug
-2. 💡 **Suggest Features** - Share your ideas for improvements
-3. 🔧 **Submit Pull Requests** - Fix bugs or add new features
-4. 📝 **Improve Documentation** - Help make the docs better
-
-### Contribution Guidelines
-- Fork the repository
-- Create a feature branch (`git checkout -b feature/AmazingFeature`)
-- Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-- Push to the branch (`git push origin feature/AmazingFeature`)
-- Open a Pull Request
-
----
-
-## 🐛 Known Issues
-
-- Model weights need to be downloaded separately (due to GitHub file size limits)
-- GPU recommended for faster inference (CPU works but slower)
-- Large video files may take longer to process
-
----
-
-## 👨‍💻 Author
+<br/>
 
 <div align="center">
 
-### Sayali More
-### Dipak Khandagale
-### Priya Marmat
+## 👨‍💻 Contributors
 
-</div>
+**Dipak Khandagale** · **Sayali More** · **Priya Marmat**
 
----
+[![GitHub](https://img.shields.io/badge/GitHub-Dipakk7-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Dipakk7)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Dipak%20Khandagale-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dipakkhandagale/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit%20Site-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://dipakkhandagale.vercel.app/)
 
-## 🙏 Acknowledgments
+<br/>
 
-- **Meta (Facebook)** for the Deepfake Detection Challenge dataset
-- **PyTorch** team for the excellent deep learning framework
-- **FastAPI** creators for the modern Python web framework
-- **React** team for the powerful UI library
-- All open-source contributors whose libraries made this project possible
+### ⭐ If you find this project useful, consider starring the repo!
 
----
+[![Star on GitHub](https://img.shields.io/github/stars/Dipakk7/DeepfakeDetect?style=for-the-badge&color=gold&logo=github)](https://github.com/Dipakk7/DeepfakeDetect/stargazers)
 
-<div align="center">
+<br/><br/>
 
-### ⭐ Star this repo if you find it helpful!
+<a href="#-deepfake-detection-platform">
+  <img src="https://img.shields.io/badge/⬆-Back%20to%20Top-black?style=for-the-badge" />
+</a>
 
-**Built with ❤️ using FastAPI, PyTorch, React, and OpenCV to ensure digital media authenticity.**
-
-[⬆ Back to Top](#-deepfake-detection-platform)
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
 
 </div>
